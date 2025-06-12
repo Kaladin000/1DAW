@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+  <title></title>
+</head>
+<body>
+  <p id="resposta"></p>
+  <script>
+    let string = prompt("Introduce una palabra" , "palabra");
+    if (string.charAt(0) == 'a' || string.charAt(0) == 'e' || string.charAt(0) == 'i' || string.charAt(0) == 'o' || string.charAt(0) == 'u' || 
+    string.charAt(0) == 'A' || string.charAt(0) == 'E' || string.charAt(0) == 'I' || string.charAt(0) == 'O' || string.charAt(0) == 'U') {
+      resposta.textContent = "La palabra comienza por vocal";
+      document.getElementById("resposta").style.color="green";
+    } else {
+      resposta.textContent = "La palabra comienza por consonante";
+      document.getElementById("resposta").style.color="red";
+    }
+  </script>
+</body>
+</html>

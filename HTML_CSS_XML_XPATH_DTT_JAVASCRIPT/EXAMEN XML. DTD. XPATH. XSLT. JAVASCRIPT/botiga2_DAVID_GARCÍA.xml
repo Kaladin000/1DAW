@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE botiga [
+    <!ELEMENT botiga (producte+)>
+    <!ELEMENT producte (id,nom,descripcio,preu)>
+    <!ELEMENT id (#PCDATA)>
+    <!ELEMENT nom (#PCDATA)>
+    <!ELEMENT descripcio (#PCDATA)>
+    <!ELEMENT preu (#PCDATA)>
+    <!ATTLIST nom estoc (si|no) #REQUIRED>
+]>
+
+<botiga>
+    <producte>
+        <id>P001</id>
+        <nom estoc="no">Llapis HB</nom>
+        <descripcio>Llapis de grafit amb duresa HB</descripcio>
+        <preu>1</preu>
+    </producte>
+    <producte>
+        <id>P002</id>
+        <nom estoc="si">Quadern A4</nom>
+        <descripcio>Quadern de mida A4 amb 100 fulls ratllats</descripcio>
+        <preu>4</preu>
+    </producte>
+    <producte>
+        <id>P003</id>
+        <nom estoc="si">Bolígraf Blau</nom>
+        <descripcio>Bolígraf de tinta blava de punta fina esborrable</descripcio>
+        <preu>2</preu>
+    </producte>
+    <producte>
+        <id>P004</id>
+        <nom estoc="no">Goma d'Esborrar</nom>
+        <descripcio>Goma d'esborrar blanca, suau i sense residus</descripcio>
+        <preu>1</preu>
+    </producte>
+    <producte>
+        <id>P005</id>
+        <nom estoc="si">Regle 30cm</nom>
+        <descripcio>Regle de plàstic transparent de 30cm</descripcio>
+        <preu>3</preu>
+    </producte>
+</botiga>

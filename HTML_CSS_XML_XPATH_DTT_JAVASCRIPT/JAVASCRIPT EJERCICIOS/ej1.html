@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+  <title></title>
+</head>
+<body>
+  <p id="parells">02468101214161820222426283032343638404244464850525456586062646668707274767880828486889092949698100
+  </p>
+
+  <script>
+    function  numerosPares() {
+      let a = prompt("Introduce un número positivo" , 0);
+      if (a < 0) {
+        alert("Introduce un numero valido mayor o igual a 0");
+        return;
+      }
+      let stringParesParrafo = document.getElementById("parells").innerHTML;
+      let stringPares = "";
+      for (i=0; i <= a/2; i++) {
+        let index = 5 + (i - 5) * 2; // Utilizo esto para buscar los números de dos cifras, en vez de una cifra en una cifra
+        if (i >= 0 && i <= 4) {
+          stringPares = stringPares + stringParesParrafo.charAt(i) + " ";
+        }
+        else if (i > 4) {
+          stringPares = stringPares + stringParesParrafo.charAt(index) + stringParesParrafo.charAt(index+1) + " ";
+        }
+      }
+      alert (stringPares);
+    }
+    numerosPares();
+  </script>
+</body>
+</html>

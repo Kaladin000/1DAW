@@ -1,0 +1,77 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <header>
+            <h1>APRENENT HTML5</h1>
+        </header>
+        <nav>
+            <ol type="I">
+                <li><a href="https://www.w3schools.com/html/" target="_blank">INICI</a></li>
+                <li><a href="https://www.coursera.org/courses?query=html&msockid=0e981e3131736b690ca50ad830586abf" target="_blank">CURSOS</a></li>
+                <li><a href="mailto:davidgarciavalero@gmail.com" target="_blank">CONTACTE</a></li>
+            </ol>
+        </nav>
+        <main>
+            <article>
+                <h2>La semàntica</h2>
+                <p><b>La semàntica a l'HTML</b> es refereix al <mark>significat o la informació
+                addicional que atorguen els elements o etiquetes del llenguatge,
+                informació que defineix o descriu el contingut, la funció o la secció
+                que contenen</mark>.
+
+                <p>Aquesta informació és la que permet que un document es pugui
+                    <u>rastrejar</u> de millor manera. Ajuda a que el contingut es mostri de
+                    manera <i>consistent</i> en diferents aplicacions i contextos, a més de ser
+                    fonamental per atorgar accessibilitat i funcionalitat <s>en</s> amb tecnologia
+                    d'assistència com lectors de contingut.</p>
+            </article>
+            <article>
+                <h2>Els nostres cursos</h2>
+                <table border="1">
+                    <tr>
+                        <th>Curs</th>
+                        <th>Professors</th>
+                        <th>Inici del curs</th>
+                    </tr>
+                    <tr>
+                        <td>Introducció a HTML5</td>
+                        <td><img src="/imgs/professor.jpg" alt="professor" height="80" width="80"></td>
+                        <td>1 de desembre de 2024</td>
+                    </tr>
+                    <tr>
+                        <td>Introducció a CSS3</td>
+                        <td><img src="/imgs/professora.jpg" alt="professora" height="80" width="80"></td>
+                        <td>14 de septembre de 2025</td>
+                    </tr>
+                </table>
+            </article>
+        </main>
+        <aside>
+            <h1>Formulari de registre</h1>
+            <form method="post" action="formularis.php" target="_blank ">
+                <label required for="usuari">Nom d'usuari:</label>
+                <input pattern="([A-Za-z]{4,10})[0-9]" required type="text" id="usuari" placeholder="Joan21"><br><br>
+                <label for="contrasenya">Contrasenya:</label>
+                <input required type="password" id="contrasenya" minlength="8"><br><br>
+                Gènere: <br>
+                <input required type="radio" name="gènere" id="home">
+                <label for="home">Home</label><br>
+                <input type="radio" name="gènere" id="dona">
+                <label for="dona">Dona</label><br>
+                <input type="radio" name="gènere" id="no binari">
+                <label for="no binari">No binari</label><br>
+                <input type="radio" name="gènere" id="no informar">
+                <label for="no informar">No informar</label><br><br>
+                <label for="email">Correu electrònic:</label>
+                <input required type="email" name="email"><br><br>
+                <input checked required type="checkbox" id="pdades">
+                <label for="pdades">Declare haver llegit i accepte les condicions generals del programa i la normativa sobre protecció de dades</label><br><br>
+                <input type="submit" value="Envia">
+
+            </form>
+        </aside>
+        <footer>David García Valero</footer>
+    </body>
+</html>

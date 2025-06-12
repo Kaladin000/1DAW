@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personas>
+    <persona anyNaiximent="1997">
+        <nom>Sara</nom>
+        <dni>98521475U</dni>
+        <domicili>Avinguda de Petrer</domicili>
+    </persona>
+    <persona anyNaiximent="2002">
+        <nom>Pedro</nom>
+        <dni>54879582R</dni>
+        <domicili>Avinguda d'Elda</domicili>
+    </persona>
+</personas>

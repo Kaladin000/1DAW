@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Vintage - Reserva de Habitaciones</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+        body {
+            background: linear-gradient(135deg, #fdf6e3 0%, #e0c3fc 100%);
+            font-family: 'Special Elite', 'Courier New', Courier, monospace;
+            color: #4B3F2B;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 420px;
+            margin: 48px auto;
+            background: #fffbe6;
+            border: 3px solid #bfa05a;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px #bfa05a55, 0 0 0 8px #fffbe6;
+            padding: 32px 28px 24px 28px;
+            position: relative;
+        }
+        .container:before {
+            content: "";
+            position: absolute;
+            top: -12px; left: 32px; right: 32px;
+            height: 8px;
+            background: repeating-linear-gradient(
+                90deg, #bfa05a, #bfa05a 8px, #fffbe6 8px, #fffbe6 16px
+            );
+            border-radius: 4px 4px 0 0;
+        }
+        h1 {
+            font-family: 'Special Elite', 'Courier New', Courier, monospace;
+            font-size: 2.3rem;
+            text-align: center;
+            color: #bfa05a;
+            margin-bottom: 18px;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 0 #fffbe6, 2px 2px 0 #bfa05a44;
+        }
+        form {
+            margin: 0;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-size: 1.05rem;
+            margin-bottom: 6px;
+            letter-spacing: 1px;
+            color: #6d5c36;
+            text-shadow: 0 1px 0 #fffbe6;
+        }
+        input, select {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px 12px;
+            font-size: 1rem;
+            font-family: 'Special Elite', 'Courier New', Courier, monospace;
+            border: 2px solid #bfa05a;
+            background: #f9eec0;
+            color: #4B3F2B;
+            border-radius: 6px;
+            outline: none;
+            transition: border-color 0.2s;
+            margin: 0;
+        }
+        input:focus, select:focus {
+            border-color: #ff8c42;
+            background: #fffbe6;
+        }
+        button {
+            display: block;
+            width: 100%;
+            background: linear-gradient(90deg, #ff8c42 0%, #bfa05a 100%);
+            color: #fffbe6;
+            font-family: 'Special Elite', 'Courier New', Courier, monospace;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: 2px solid #bfa05a;
+            border-radius: 8px;
+            padding: 12px 0;
+            margin-top: 10px;
+            cursor: pointer;
+            box-shadow: 0 2px 0 #bfa05a66;
+            letter-spacing: 2px;
+            transition: background 0.2s, color 0.2s;
+        }
+        button:hover {
+            background: linear-gradient(90deg, #bfa05a 0%, #ff8c42 100%);
+            color: #4B3F2B;
+        }
+        /* Decorative bottom border */
+        .container:after {
+            content: "";
+            position: absolute;
+            bottom: -12px; left: 32px; right: 32px;
+            height: 8px;
+            background: repeating-linear-gradient(
+                90deg, #bfa05a, #bfa05a 8px, #fffbe6 8px, #fffbe6 16px
+            );
+            border-radius: 0 0 4px 4px;
+        }
+        @media (max-width: 500px) {
+            .container {
+                padding: 18px 6px 14px 6px;
+                max-width: 98vw;
+            }
+            .container:before,
+            .container:after {
+                left: 8px; right: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hotel Vintage</h1>
+        <div class="neon-line"></div>
+
+        <form action="AddReserva" method="post">
+            <div class="form-group">
+                <label for="nombreCliente">Nombre del Cliente:</label>
+                <input type="text" id="nombreCliente" name="nombreCliente" required autofocus>
+            </div>
+
+            <div class="form-group">
+                <label for="tipoHabitacion">Tipo de Habitación:</label>
+                <select id="tipoHabitacion" name="tipoHabitacion" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="Individual">Individual</option>
+                    <option value="Doble">Doble</option>
+                    <option value="Suite">Suite</option>
+                    <option value="Familiar">Familiar</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="numNoches">Número de Noches:</label>
+                <input type="number" id="numNoches" name="numNoches" min="1" value="1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="numHuespedes">Número de Huéspedes:</label>
+                <input type="number" id="numHuespedes" name="numHuespedes" min="1" value="1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="precioPorNoche">Precio por Noche (€):</label>
+                <input type="number" id="precioPorNoche" name="precioPorNoche" min="0" step="0.01" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fechaEntrada">Fecha de Entrada:</label>
+                <input type="date" id="fechaEntrada" name="fechaEntrada" required>
+            </div>
+
+            <button type="submit">Reservar Ahora</button>
+        </form>
+    </div>
+</body>
+
+</html>

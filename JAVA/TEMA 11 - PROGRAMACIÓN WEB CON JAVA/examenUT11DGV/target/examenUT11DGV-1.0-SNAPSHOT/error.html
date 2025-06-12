@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Vintage - Error en la Reserva</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+        body {
+            background: linear-gradient(135deg, #fdf6e3 0%, #e0c3fc 100%);
+            font-family: 'Special Elite', 'Courier New', Courier, monospace;
+            color: #4B3F2B;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 60px auto;
+            background: #fffbe6;
+            border: 3px solid #bfa05a;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px #bfa05a55, 0 0 0 8px #fffbe6;
+            padding: 36px 28px 28px 28px;
+            position: relative;
+            text-align: center;
+        }
+
+        .container:before {
+            content: "";
+            position: absolute;
+            top: -12px;
+            left: 32px;
+            right: 32px;
+            height: 8px;
+            background: repeating-linear-gradient(90deg, #bfa05a, #bfa05a 8px, #fffbe6 8px, #fffbe6 16px);
+            border-radius: 4px 4px 0 0;
+        }
+
+        .container:after {
+            content: "";
+            position: absolute;
+            bottom: -12px;
+            left: 32px;
+            right: 32px;
+            height: 8px;
+            background: repeating-linear-gradient(90deg, #bfa05a, #bfa05a 8px, #fffbe6 8px, #fffbe6 16px);
+            border-radius: 0 0 4px 4px;
+        }
+
+        h1 {
+            font-family: 'Special Elite', 'Courier New', Courier, monospace;
+            font-size: 2.1rem;
+            color: #bfa05a;
+            margin-bottom: 18px;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 0 #fffbe6, 2px 2px 0 #bfa05a44;
+        }
+
+        .error-box {
+            background: #ffe1a8;
+            color: #d7263d;
+            border: 2px dashed #d7263d;
+            border-radius: 8px;
+            padding: 18px 12px;
+            font-size: 1.13rem;
+            margin-bottom: 28px;
+            font-weight: bold;
+            box-shadow: 0 2px 8px #bfa05a33;
+            text-shadow: 1px 1px 0 #fffbe6;
+        }
+
+        .volver {
+            display: inline-block;
+            width: 180px;
+            background: linear-gradient(90deg, #ff8c42 0%, #bfa05a 100%);
+            color: #fffbe6;
+            font-family: 'Special Elite', 'Courier New', Courier, monospace;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border: 2px solid #bfa05a;
+            border-radius: 8px;
+            padding: 10px 0;
+            cursor: pointer;
+            box-shadow: 0 2px 0 #bfa05a66;
+            letter-spacing: 2px;
+            text-align: center;
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .volver:hover {
+            background: linear-gradient(90deg, #bfa05a 0%, #ff8c42 100%);
+            color: #4B3F2B;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 18px 4px 14px 4px;
+                max-width: 98vw;
+            }
+
+            .container:before,
+            .container:after {
+                left: 8px;
+                right: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>¡Error en la Reserva!</h1>
+        <div class="error-box">
+            Ha ocurrido un error al procesar tu reserva.<br>
+            Has introducido un número erróneo en las noches, huespedes o precio el por noche </div>
+        <a href="index.html" class="volver">Volver al formulario</a>
+    </div>
+</body>
+
+</html>

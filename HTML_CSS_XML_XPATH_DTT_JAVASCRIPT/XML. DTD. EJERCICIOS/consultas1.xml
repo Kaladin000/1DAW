@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<llibres> 
+    <llibre> 
+        <titol disponibilitat="si">Marina</titol> 
+        <autor>Carlos Ruiz Zafón</autor> 
+        <ISBN>978-84-204-1815-9</ISBN> 
+        <preu>15</preu> 
+        <nivell>intermedi</nivell> 
+        <editorial>Editorial Planeta</editorial> 
+    </llibre> 
+    <llibre> 
+        <titol disponibilitat="si">La catedral del mar</titol> 
+        <autor>Ildefonso Falcones</autor> 
+        <ISBN>978-84-253-4293-7</ISBN> 
+        <preu>18</preu> 
+        <nivell>intermedi</nivell> 
+        <editorial>Editorial Grijalbo</editorial> 
+    </llibre> 
+    <llibre> 
+        <titol disponibilitat="no">Jo confesso</titol> 
+        <autor>Jaume Cabré</autor> 
+        <ISBN>978-84-16042-48-7</ISBN> 
+        <preu>22</preu> 
+        <nivell>avançat</nivell> 
+        <editorial>Proa</editorial> 
+    </llibre> 
+    <llibre> 
+        <titol disponibilitat="si">La plaça del Diamant</titol> 
+        <autor>Mercè Rodoreda</autor> 
+        <ISBN>978-84-297-0676-6</ISBN> 
+        <preu>12</preu> 
+        <nivell>intermedi</nivell> 
+        <editorial>Edicions 62</editorial> 
+    </llibre> 
+ 
+    <llibre> 
+        <titol disponibilitat="no">La filla estrangera</titol> 
+        <autor>Najat El Hachmi</autor> 
+        <ISBN>978-84-158-0903-0</ISBN> 
+        <preu>17.00</preu> 
+        <nivell>intermedi</nivell> 
+        <editorial>Edicions Destino</editorial> 
+    </llibre> 
+    <llibre> 
+        <titol disponibilitat="si">El quadern gris</titol> 
+        <autor>Josep Pla</autor> 
+        <ISBN>978-84-297-1622-2</ISBN> 
+        <preu>16.95</preu> 
+        <nivell>avançat</nivell> 
+        <editorial>Austral</editorial> 
+    </llibre> 
+    <llibre> 
+        <titol disponibilitat="no">El carrer de les camèlies</titol> 
+        <autor>Mercè Rodoreda</autor> 
+        <ISBN>978-84-16042-91-3</ISBN> 
+        <preu>14.90</preu> 
+        <nivell>intermedi</nivell> 
+        <editorial>Club Editor</editorial> 
+    </llibre> 
+    <llibre> 
+        <titol disponibilitat="si">La plaça del Diamant</titol> 
+        <autor>Victòria Puig</autor> 
+        <ISBN>978-84-612-1314-0</ISBN> 
+        <preu>21.50</preu> 
+        <nivell>avançat</nivell> 
+        <editorial>La Magrana</editorial> 
+    </llibre> 
+    <llibre> 
+        <titol disponibilitat="si">El temps de les cireres</titol> 
+        <autor>Joan Sales</autor> 
+        <ISBN>978-84-297-0715-2</ISBN> 
+        <preu>18.00</preu> 
+        <nivell>avançat</nivell> 
+        <editorial>Club Editor</editorial> 
+    </llibre> 
+    <llibre> 
+        <titol disponibilitat="si">El Quadern Gris</titol> 
+        <autor>Josep Pla</autor> 
+        <ISBN>978-84-15446-05-7</ISBN> 
+        <preu>15.95</preu> 
+        <nivell>avançat</nivell> 
+        <editorial>Edicions 62</editorial> 
+    </llibre> 
+</llibres>
